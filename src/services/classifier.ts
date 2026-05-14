@@ -1,4 +1,4 @@
-import { InboundMessae, QueryType } from "../schema/unified";
+import { InboundMessage, QueryType } from "../schema/unified";
 
 //NOTE: these regex expressions are written using help of llm
 //
@@ -52,7 +52,7 @@ const CLASSIFICATION_PATTERNS: Array<{
     },
   ];
 
-export function classifyQuery(message: InboundMessae): QueryType {
+export function classifyQuery(message: InboundMessage): QueryType {
   const text = message.message;
 
   if (message.booking_ref) {

@@ -46,7 +46,7 @@ export const unifiedMessageSchema = z.object({
   query_type: z.enum(QUERY_TYPES),
 })
 
-export type InboundMessae = z.infer<typeof inboudMessageSchema>
+export type InboundMessage = z.infer<typeof inboudMessageSchema>
 export type UnifiedMessage = z.infer<typeof unifiedMessageSchema>
 
 export type ClaudeReply = {
