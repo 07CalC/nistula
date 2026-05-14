@@ -58,7 +58,7 @@ export type ClaudeReply = {
 
 }
 
-export type ErrorResponse = {
+export interface ErrorResponse {
   error: string;
   code: string;
 }
